@@ -15,9 +15,11 @@ Coded by www.creative-tim.com
 
 // @mui material components
 import Grid from "@mui/material/Grid";
+import React, { useEffect } from "react";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
+import { useNavigate } from "react-router-dom";
 
 // Material Dashboard 2 React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
@@ -37,7 +39,16 @@ import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
 
 function Dashboard() {
   const { sales, tasks } = reportsLineChartData;
+  const navigate = useNavigate();
 
+  useEffect(() => {
+    const userId = sessionStorage.getItem("userId");
+    console.log(userId); // for debugging
+
+    if (!userId) {
+      navigate("/authentication/sign-in");
+    }
+  }, [navigate]);
   return (
     <DashboardLayout>
       <DashboardNavbar />

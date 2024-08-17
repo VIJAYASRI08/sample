@@ -14,6 +14,11 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
+import React, { useEffect, useState } from "react";
+
+// react-router-dom components
+import { useNavigate } from "react-router-dom";
+
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 
@@ -52,6 +57,16 @@ import team3 from "assets/images/team-3.jpg";
 import team4 from "assets/images/team-4.jpg";
 
 function Overview() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    const userId = sessionStorage.getItem("userId");
+    console.log(userId); // for debugging
+
+    if (!userId) {
+      navigate("/authentication/sign-in");
+    }
+  }, [navigate]);
+
   return (
     <DashboardLayout>
       <DashboardNavbar />
