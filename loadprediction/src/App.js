@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './Topbar/Header';
 import Pageend from './Footer/Pageend';
+import Slide from './Topbar/Slide';
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Header/>
       <div>
+        <Slide/>
       </div>
       <Pageend/>
     </div>
