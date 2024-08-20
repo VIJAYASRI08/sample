@@ -1,0 +1,51 @@
+.topBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+}
+.logoLeft{
+   width: 150px;
+}
+.NCTContainer{
+    display: flex;
+    align-items: center;
+}
+.NCT{
+    width: 150px;
+}
+.nctText {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FF5722;
+}
+.logoRight{
+    width: 150px;
+}
+.navBar {
+    display: flex;
+    align-items: center;
+    background-color: #0288d1;
+    padding: 10px 20px;
+}
+.indiaEnergyLogo{
+    width: 100px;
+}
+.title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    flex: 1;
+}
+.nav{
+    display: flex;
+    gap: 15px;
+}
+.navLink{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
