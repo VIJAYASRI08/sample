@@ -3,7 +3,6 @@ import './Pageend.css'
 
 const Pageend = () => {
   return (
-    <div>
     <footer class="mainfooter" role="contentinfo">
         <div class="footer-middle">
             <div class="container">
@@ -63,7 +62,6 @@ const Pageend = () => {
             </div>
         </div>
     </footer>
-    </div>
   )
 }
 
